@@ -1,0 +1,87 @@
+ 
+        body {
+            box-sizing: border-box;
+        }
+
+        .logo
+        {
+            width: 240px;
+            height: auto;
+        }  
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .font-body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #FF6B35 0%, #FF8F5E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #FF6B35 0%, #FF8F5E 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+    }
+    
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .step-line::after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 60px;
+      width: 2px;
+      height: calc(100% - 20px);
+      background: linear-gradient(to bottom, #FF6B35, transparent);
+    }
+    
+    .step-line:last-child::after {
+      display: none;
+    }
+
+ 

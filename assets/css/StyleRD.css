@@ -1,0 +1,19 @@
+<style type="text/css" rel="stylesheet">
+  
+    #rd-section-mkafn0nl {
+      
+          background-color: #ffffff;
+        
+      border-bottom-style: none;
+      border-color: #000000;
+      border-left-style: none;
+      border-radius: 0px;
+      border-right-style: none;
+      border-top-style: none;
+      border-width: 1px;
+    }
+
+    #rd-section-mkafn0nl > div:not(.bricks--row) {
+      min-height: 0px;
+    }
+  
