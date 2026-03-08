@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cartão de Visitas - Movili</title>
+    <style>
+        body {
+            background: #0b0b0d;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 900px;
+            height: 520px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .side {
+            flex: 1;
+            border-radius: 22px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .04));
+            border: 1px solid rgba(255, 255, 255, .1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+            padding: 40px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .side::after {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(255, 122, 0, .35), transparent 70%);
+            bottom: -120px;
+            right: -120px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff7a00, #ff9c3d);
+            font-weight: 800;
+            font-size: 28px;
+            color: #1b1207;
+            margin-bottom: 20px;
+        }
+
+        .brand {
+            font-size: 34px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .brand span {
+            color: #ff9c3d
+        }
+
+        .tag {
+            margin-top: 8px;
+            color: #b7b7bd;
+            font-size: 15px;
+            max-width: 300px;
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        .role {
+            color: #ff9c3d;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            color: #d0d0d4;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .qr {
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 14px;
+        }
+
+        .qr-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .qr-text {
+            margin-top: 14px;
+            font-size: 14px;
+            color: #b7b7bd;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .links {
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+            font-size: 14px;
+            color: #b7b7bd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="side">
+
+            <div class="logo">M</div>
+
+            <div class="brand">Movili <span>Tecnologia</span></div>
+
+            <div class="tag">
+                Marketing, comercial e tecnologia para empresas que querem crescer com estratégia.
+            </div>
+
+            <div class="name">Jonathan S. Pequeno</div>
+            <div class="role">CEO</div>
+
+            <div class="info">
+                📧 jonathan@movili.net<br>
+                📱 +55 61 99671‑9511<br>
+                🌐 movili.net
+            </div>
+
+            <div class="links">
+                Soluções comerciais e em marketing
+            </div>
+
+        </div>
+
+        <div class="side">
+
+            <div class="qr-wrap">
+
+                <img class="qr"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://movili.net/links"
+                    alt="QR Code">
+
+                <div class="qr-text">
+                    Escaneie o QR Code para acessar todos os links da Movili
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
