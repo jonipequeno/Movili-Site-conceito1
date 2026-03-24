@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://movili.net/sitemap.xml

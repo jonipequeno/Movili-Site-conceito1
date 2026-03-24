@@ -1,1111 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0VLHLGH1FQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-0VLHLGH1FQ');
-    </script>
-
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2037314530151594');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=2037314530151594&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movili Tecnologia | Marketing, Comercial e Sites que geram resultados</title>
-    <link rel="icon" href="/assets/img/movili.png" type="image/png">
-    <meta name="description"
-        content="A Movili Tecnologia ajuda empresas a vender mais com sites estratégicos, marketing digital, CRM, automações e estrutura comercial inteligente." />
-    <meta name="theme-color" content="#ff7a00" />
-    <style>
-        :root {
-            --bg: #0b0b0d;
-            --bg-soft: #131316;
-            --card: rgba(255, 255, 255, 0.06);
-            --card-border: rgba(255, 255, 255, 0.1);
-            --text: #f7f7f8;
-            --muted: #b7b7bd;
-            --primary: #ff7a00;
-            --primary-2: #ff9c3d;
-            --white: #ffffff;
-            --shadow: 0 20px 60px rgba(0, 0, 0, .35);
-            --radius-xl: 28px;
-            --radius-lg: 20px;
-            --radius-md: 14px;
-            --max: 1200px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background:
-                radial-gradient(circle at top right, rgba(255, 122, 0, .18), transparent 30%),
-                radial-gradient(circle at top left, rgba(255, 122, 0, .09), transparent 25%),
-                linear-gradient(180deg, #0b0b0d 0%, #111114 100%);
-            color: var(--text);
-            line-height: 1.55;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(calc(100% - 32px), var(--max));
-            margin: 0 auto;
-        }
-
-        .section {
-            padding: 88px 0;
-        }
-
-        .section-sm {
-            padding: 36px 0;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 14px;
-            border-radius: 999px;
-            background: rgba(255, 122, 0, .12);
-            border: 1px solid rgba(255, 122, 0, .22);
-            color: #ffd4ac;
-            font-weight: 600;
-            font-size: 13px;
-            letter-spacing: .2px;
-        }
-
-        .badge::before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--primary);
-            box-shadow: 0 0 18px var(--primary);
-        }
-
-        .nav-wrap {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            backdrop-filter: blur(18px);
-            background: rgba(11, 11, 13, .68);
-            border-bottom: 1px solid rgba(255, 255, 255, .06);
-        }
-
-        nav {
-            min-height: 76px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            letter-spacing: .3px;
-        }
-
-        .logo-mark {
-            width: 42px;
-            height: 42px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-2));
-            display: grid;
-            place-items: center;
-            color: #1b1207;
-            font-weight: 900;
-            box-shadow: 0 10px 30px rgba(255, 122, 0, .28);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 22px;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .nav-links a:hover {
-            color: var(--white);
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            min-height: 50px;
-            padding: 0 22px;
-            border-radius: 999px;
-            font-weight: 700;
-            border: 1px solid transparent;
-            transition: .25s ease;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--primary-2));
-            color: #1d1208;
-            box-shadow: 0 14px 30px rgba(255, 122, 0, .25);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 18px 35px rgba(255, 122, 0, .32);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, .04);
-            color: var(--white);
-            border-color: rgba(255, 255, 255, .09);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, .08);
-        }
-
-        .hero {
-            padding: 54px 0 88px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.15fr .85fr;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .hero h1 {
-            margin: 18px 0 16px;
-            font-size: clamp(2.6rem, 5vw, 5rem);
-            line-height: .98;
-            letter-spacing: -2px;
-            max-width: 820px;
-        }
-
-        .hero h1 .accent {
-            color: var(--primary-2);
-        }
-
-        .hero p {
-            margin: 0;
-            max-width: 700px;
-            font-size: 1.08rem;
-            color: var(--muted);
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 28px;
-        }
-
-        .hero-points {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 26px;
-        }
-
-        .pill {
-            padding: 10px 14px;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, .05);
-            border: 1px solid rgba(255, 255, 255, .08);
-            color: #ececf0;
-            font-size: 14px;
-        }
-
-        .hero-card,
-        .card {
-            background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .04));
-            border: 1px solid var(--card-border);
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow);
-        }
-
-        .hero-card {
-            padding: 24px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-card::after {
-            content: "";
-            position: absolute;
-            inset: auto -60px -60px auto;
-            width: 180px;
-            height: 180px;
-            background: radial-gradient(circle, rgba(255, 122, 0, .28), transparent 70%);
-            pointer-events: none;
-        }
-
-        .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-        }
-
-        .stat {
-            padding: 18px;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, .04);
-            border: 1px solid rgba(255, 255, 255, .07);
-        }
-
-        .stat strong {
-            display: block;
-            font-size: 1.7rem;
-            color: var(--white);
-            margin-bottom: 4px;
-        }
-
-        .stat span {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .hero-mini {
-            margin-top: 14px;
-            padding: 16px 18px;
-            border-radius: 18px;
-            background: rgba(255, 122, 0, .09);
-            border: 1px solid rgba(255, 122, 0, .16);
-            color: #ffd8b2;
-            font-size: 14px;
-        }
-
-        .section-head {
-            max-width: 760px;
-            margin-bottom: 38px;
-        }
-
-        .section-head h2 {
-            margin: 0 0 12px;
-            font-size: clamp(2rem, 3vw, 3.2rem);
-            line-height: 1;
-            letter-spacing: -1.2px;
-        }
-
-        .section-head p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 1.03rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .service-card {
-            padding: 24px;
-            border-radius: var(--radius-lg);
-            background: rgba(255, 255, 255, .05);
-            border: 1px solid rgba(255, 255, 255, .08);
-            transition: .25s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 122, 0, .25);
-            box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
-        }
-
-        .service-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 16px;
-            background: linear-gradient(135deg, rgba(255, 122, 0, .22), rgba(255, 156, 61, .14));
-            border: 1px solid rgba(255, 122, 0, .2);
-            display: grid;
-            place-items: center;
-            font-size: 22px;
-            margin-bottom: 18px;
-        }
-
-        .service-card h3 {
-            margin: 0 0 10px;
-            font-size: 1.18rem;
-        }
-
-        .service-card p {
-            margin: 0;
-            color: var(--muted);
-            font-size: .98rem;
-        }
-
-        .split {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 22px;
-            align-items: start;
-        }
-
-        .panel {
-            padding: 28px;
-            border-radius: 26px;
-            background: rgba(255, 255, 255, .05);
-            border: 1px solid rgba(255, 255, 255, .08);
-        }
-
-        .list-clean {
-            display: grid;
-            gap: 14px;
-            margin-top: 18px;
-        }
-
-        .list-item {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            padding: 14px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, .07);
-        }
-
-        .list-item:last-child {
-            border-bottom: 0;
-        }
-
-        .check {
-            flex: 0 0 30px;
-            width: 30px;
-            height: 30px;
-            border-radius: 999px;
-            background: rgba(255, 122, 0, .15);
-            color: var(--primary-2);
-            display: grid;
-            place-items: center;
-            font-weight: 800;
-            margin-top: 2px;
-        }
-
-        .list-item h4 {
-            margin: 0 0 4px;
-            font-size: 1rem;
-        }
-
-        .list-item p {
-            margin: 0;
-            color: var(--muted);
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .step {
-            padding: 24px;
-            background: rgba(255, 255, 255, .05);
-            border-radius: 22px;
-            border: 1px solid rgba(255, 255, 255, .08);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .step-number {
-            width: 42px;
-            height: 42px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            margin-bottom: 14px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-2));
-            color: #1b1207;
-            font-weight: 900;
-        }
-
-        .step h3 {
-            margin: 0 0 8px;
-            font-size: 1.04rem;
-        }
-
-        .step p {
-            margin: 0;
-            color: var(--muted);
-            font-size: .96rem;
-        }
-
-        .cta-band {
-            padding: 28px;
-            border-radius: 28px;
-            background: linear-gradient(135deg, rgba(255, 122, 0, .18), rgba(255, 156, 61, .08));
-            border: 1px solid rgba(255, 122, 0, .22);
-            display: flex;
-            justify-content: space-between;
-            gap: 18px;
-            align-items: center;
-        }
-
-        .cta-band h3 {
-            margin: 0 0 6px;
-            font-size: 1.6rem;
-            line-height: 1.1;
-        }
-
-        .cta-band p {
-            margin: 0;
-            color: #ffd8b4;
-        }
-
-        .form-card {
-            padding: 30px;
-            border-radius: 28px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .04));
-            border: 1px solid rgba(255, 255, 255, .09);
-            box-shadow: var(--shadow);
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-        }
-
-        .field,
-        .field-full {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .field-full {
-            grid-column: 1 / -1;
-        }
-
-        label {
-            font-size: 14px;
-            color: #ececf0;
-            font-weight: 600;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            min-height: 52px;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, .1);
-            background: rgba(255, 255, 255, .05);
-            color: var(--white);
-            padding: 0 16px;
-            outline: none;
-            font: inherit;
-        }
-
-        textarea {
-            min-height: 130px;
-            resize: vertical;
-            padding: 16px;
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            color: #9f9fa7;
-        }
-
-        select {
-            appearance: none;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: rgba(255, 122, 0, .6);
-            box-shadow: 0 0 0 4px rgba(255, 122, 0, .12);
-        }
-
-        .form-note {
-            margin-top: 12px;
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .faq {
-            display: grid;
-            gap: 14px;
-        }
-
-        details {
-            border-radius: 18px;
-            border: 1px solid rgba(255, 255, 255, .08);
-            background: rgba(255, 255, 255, .04);
-            padding: 18px 20px;
-        }
-
-        summary {
-            cursor: pointer;
-            font-weight: 700;
-            list-style: none;
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details p {
-            margin: 12px 0 0;
-            color: var(--muted);
-        }
-
-        footer {
-            padding: 34px 0 50px;
-            border-top: 1px solid rgba(255, 255, 255, .06);
-            color: var(--muted);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.2fr .8fr;
-            gap: 20px;
-            align-items: start;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px 16px;
-            justify-content: flex-end;
-        }
-
-        .float-wa {
-            position: fixed;
-            right: 18px;
-            bottom: 18px;
-            z-index: 60;
-            width: 60px;
-            height: 60px;
-            border-radius: 999px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, #25d366, #42df7c);
-            color: #082012;
-            box-shadow: 0 18px 40px rgba(37, 211, 102, .28);
-            font-size: 28px;
-            font-weight: 900;
-        }
-
-        .muted {
-            color: var(--muted);
-        }
-
-        .accent-text {
-            color: var(--primary-2);
-        }
-
-        @media (max-width: 1080px) {
-
-            .hero-grid,
-            .split,
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .steps {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .grid-3 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 760px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding-top: 28px;
-            }
-
-            .grid-3,
-            .steps,
-            .form-grid,
-            .stat-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-band {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .hero h1 {
-                letter-spacing: -1.4px;
-            }
-
-            .section {
-                padding: 68px 0;
-            }
-
-            .form-card,
-            .panel,
-            .hero-card {
-                padding: 22px;
-            }
-
-            .footer-links {
-                justify-content: flex-start;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing, Comercial e Tecnologia para Crescimento Real | Movili</title>
+  <meta name="description" content="Landing page premium da Movili com foco em SEO, geração de leads, tráfego pago, sites que convertem, CRM e assessoria comercial.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://movili.net/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Movili">
+  <meta property="og:title" content="Marketing, Comercial e Tecnologia para Crescimento Real | Movili">
+  <meta property="og:description" content="Landing page premium da Movili com foco em SEO, geração de leads, tráfego pago, sites que convertem, CRM e assessoria comercial.">
+  <meta property="og:url" content="https://movili.net/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marketing, Comercial e Tecnologia para Crescimento Real | Movili">
+  <meta name="twitter:description" content="Landing page premium da Movili com foco em SEO, geração de leads, tráfego pago, sites que convertem, CRM e assessoria comercial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Movili",
+      "url": "https://movili.net/",
+      "logo": "https://movili.net/assets/img/logo.png",
+      "email": "contato@movili.net"
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "Movili",
+      "url": "https://movili.net/",
+      "description": "Marketing, comercial e tecnologia em uma operação integrada para gerar autoridade, leads e conversão.",
+      "areaServed": "Brasil",
+      "serviceType": ["Tráfego pago", "Criação de sites", "CRM e automação", "Assessoria comercial", "Social media"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"A Movili atende só criação de sites?","acceptedAnswer":{"@type":"Answer","text":"Não. A Movili integra sites, tráfego pago, CRM, automações, social media e assessoria comercial."}},
+        {"@type":"Question","name":"Quanto tempo leva para ver resultado?","acceptedAnswer":{"@type":"Answer","text":"Depende da maturidade do negócio e do serviço contratado, mas as primeiras evoluções costumam aparecer nas primeiras semanas de execução estruturada."}},
+        {"@type":"Question","name":"Posso contratar apenas uma solução?","acceptedAnswer":{"@type":"Answer","text":"Sim. O diagnóstico aponta a prioridade e a empresa pode contratar um serviço pontual ou uma estrutura integrada."}}
+      ]
+    }
+  ]
+}</script>
 </head>
+<body class="">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/index.html" aria-label="Movili Home"><span class="brand-mark">M</span><span>Movili</span></a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Principal">
+      <a href="/index.html#solucoes">Soluções</a>
+      <a href="/index.html#processo">Processo</a>
+      <a href="/index.html#cases">Resultados</a>
+      <a href="/index.html#faq">FAQ</a>
+      <a href="/servicos/trafego-pago.html">Tráfego Pago</a>
+      <a href="/servicos/sites-estrategicos.html">Sites</a>
+      <a href="/index.html#contato">Contato</a>
+    </nav>
+    <div class="nav-actions"><a class="btn btn-primary" href="#contato">Solicitar diagnóstico</a></div>
+  </div>
+</header>
 
-<body>
-    <div class="nav-wrap">
-        <div class="container">
-            <nav>
-                <a href="#inicio" class="logo" aria-label="Movili Tecnologia">
-                    <img src="/assets/img/logo.png" alt="Logo da Movili" width="40%" height="40%">
-                </a>
-
-                <div class="nav-links">
-                    <a href="#servicos">Serviços</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#processo">Processo</a>
-                    <a href="#contato">Contato</a>
-                </div>
-
-                <a class="btn btn-primary" href="#contato">Solicitar diagnóstico</a>
-            </nav>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Estratégia integrada para PMEs ambiciosas</span>
+        <h1>Transforme presença digital em autoridade, leads e vendas previsíveis.</h1>
+        <p>A Movili une <strong>sites estratégicos</strong>, <strong>tráfego pago</strong>, <strong>CRM</strong>, <strong>automações</strong> e <strong>assessoria comercial</strong> para empresas que querem crescer com clareza e processo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Quero um diagnóstico gratuito</a>
+          <a class="btn btn-secondary" href="#solucoes">Ver soluções</a>
         </div>
+        <div class="hero-points">
+          <div><strong>+Autoridade</strong><br><span>Layout premium para transmitir confiança desde o primeiro clique.</span></div>
+          <div><strong>+Leads</strong><br><span>Estrutura pensada para capturar e qualificar oportunidades.</span></div>
+          <div><strong>+Controle</strong><br><span>Processo comercial e tecnologia conectados ao marketing.</span></div>
+        </div>
+      </div>
+      <div class="hero-card hero-visual">
+        <span class="badge">Paleta premium: azul = confiança, verde = crescimento, branco = clareza</span>
+        <div class="metric-grid" style="margin-top:1rem">
+          <div class="metric"><small>Posicionamento</small><strong>360°</strong><span>Marketing, comercial e tecnologia atuando em conjunto.</span></div>
+          <div class="metric"><small>Foco</small><strong>ROI</strong><span>Mais eficiência em aquisição, conversão e retenção.</span></div>
+          <div class="metric"><small>Experiência</small><strong>UX</strong><span>Fluxo limpo e objetivo para reduzir atrito e aumentar ação.</span></div>
+          <div class="metric"><small>SEO</small><strong>Cluster</strong><span>LP principal + páginas satélite para ampliar cobertura semântica.</span></div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <main>
-        <section class="hero" id="inicio">
-            <div class="container hero-grid">
-                <div>
-                    <span class="badge">Estrutura comercial, marketing e tecnologia em uma só operação</span>
-                    <h1>
-                        A Movili transforma <span class="accent">sites, marketing e vendas</span> em crescimento real
-                        para sua empresa.
-                    </h1>
-                    <p>
-                        Criamos presença digital profissional, organizamos seu funil comercial e conectamos estratégia
-                        com execução para gerar mais autoridade, mais oportunidades e mais conversão.
-                    </p>
+  <section class="section" id="solucoes">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Soluções</span>
+        <h2>Páginas satélite para ranquear mais termos e converter melhor.</h2>
+        <p>Cada serviço ganhou uma landing page dedicada, com copy focada em intenção comercial, SEO semântico e CTA direto.</p>
+      </div>
+      <div class="grid-3">
+        <article class="service-card">
+          <div class="icon">01</div>
+          <h3><a href="/servicos/sites-estrategicos.html">Criação de Sites Estratégicos</a></h3>
+          <p>Posicionamento, credibilidade, velocidade e estrutura de conversão para transformar visitas em oportunidades.</p>
+          <ul class="checklist"><li>SEO on-page</li><li>Layout mobile first</li><li>Copy orientada a negócio</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="icon">02</div>
+          <h3><a href="/servicos/trafego-pago.html">Gestão de Tráfego Pago</a></h3>
+          <p>Google Ads, Meta Ads e mídia focada em demanda qualificada com previsibilidade de aquisição.</p>
+          <ul class="checklist"><li>Campanhas por estágio</li><li>Mensuração de CAC</li><li>Otimização contínua</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="icon">03</div>
+          <h3><a href="/servicos/crm-automacao.html">CRM e Automação Comercial</a></h3>
+          <p>Organização do funil, follow-up e automações para reduzir perda de oportunidade e aumentar eficiência.</p>
+          <ul class="checklist"><li>Pipeline claro</li><li>SLAs de atendimento</li><li>Automação de rotina</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="icon">04</div>
+          <h3><a href="/servicos/assessoria-comercial.html">Assessoria Comercial</a></h3>
+          <p>Estruturação de processo, discurso, indicadores e rotina de vendas para escalar com consistência.</p>
+          <ul class="checklist"><li>Playbook</li><li>Indicadores</li><li>Treinamento de rotina</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="icon">05</div>
+          <h3><a href="/servicos/social-media.html">Social Media Estratégico</a></h3>
+          <p>Conteúdo e posicionamento para fortalecer marca, educar mercado e apoiar a jornada comercial.</p>
+          <ul class="checklist"><li>Consistência visual</li><li>Pilares editoriais</li><li>Conteúdo alinhado a vendas</li></ul>
+        </article>
+        <article class="service-card">
+          <div class="icon">06</div>
+          <h3><a href="#contato">Diagnóstico Integrado</a></h3>
+          <p>Avaliação do cenário atual para identificar gargalos de aquisição, percepção e conversão.</p>
+          <ul class="checklist"><li>Visão consultiva</li><li>Priorização</li><li>Plano de ação</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="#contato">Falar com a Movili</a>
-                        <a class="btn btn-secondary" href="#servicos">Ver soluções</a>
-                    </div>
+  <section class="section strip" id="cases">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker" style="color:#bfdbfe">Prova social</span>
+        <h2 style="color:#fff">Estrutura pensada para convencer antes da reunião.</h2>
+        <p>Uma interface premium e objetiva reduz ruído, reforça percepção de valor e acelera a decisão comercial.</p>
+      </div>
+      <div class="proof">
+        <div class="stat-card"><strong>+Autoridade</strong><p>Visual sofisticado com hierarquia clara e foco em confiança.</p></div>
+        <div class="stat-card"><strong>+SEO</strong><p>Arquitetura cluster para ampliar cobertura de palavras-chave.</p></div>
+        <div class="stat-card"><strong>+Conversão</strong><p>CTAs distribuídos ao longo da jornada com menos atrito.</p></div>
+        <div class="stat-card"><strong>+Velocidade</strong><p>Base leve, sem dependências pesadas e pronta para WebP.</p></div>
+      </div>
+    </div>
+  </section>
 
-                    <div class="hero-points">
-                        <span class="pill">Sites estratégicos</span>
-                        <span class="pill">Tráfego pago</span>
-                        <span class="pill">Social Media</span>
-                        <span class="pill">CRM e automação</span>
-                        <span class="pill">Assessoria comercial</span>
-                    </div>
-                </div>
+  <section class="section" id="processo">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Processo</span>
+        <h2>Do diagnóstico à execução com foco em crescimento real.</h2>
+      </div>
+      <div class="grid-4">
+        <article class="process-step"><span>1</span><h3>Diagnóstico</h3><p>Entendimento de objetivo, oferta, canal e gargalo principal.</p></article>
+        <article class="process-step"><span>2</span><h3>Prioridade</h3><p>Definição do serviço ou combinação de frentes com maior impacto.</p></article>
+        <article class="process-step"><span>3</span><h3>Implementação</h3><p>Site, mídia, CRM e conteúdo alinhados à intenção do cliente ideal.</p></article>
+        <article class="process-step"><span>4</span><h3>Otimização</h3><p>Ajustes contínuos com base em dados de tráfego, lead e conversão.</p></article>
+      </div>
+    </div>
+  </section>
 
-                <div class="hero-card">
-                    <div class="stat-grid">
-                        <div class="stat">
-                            <strong>360°</strong>
-                            <span>Visão integrada entre marketing, tecnologia e comercial</span>
-                        </div>
-                        <div class="stat">
-                            <strong>+Autoridade</strong>
-                            <span>Presença digital mais profissional para a sua marca</span>
-                        </div>
-                        <div class="stat">
-                            <strong>+Leads</strong>
-                            <span>Estruturas focadas em captação e conversão</span>
-                        </div>
-                        <div class="stat">
-                            <strong>+Controle</strong>
-                            <span>Processos, CRM e acompanhamento de oportunidades</span>
-                        </div>
-                    </div>
+  <section class="section section-sm">
+    <div class="container cta-band">
+      <div>
+        <span class="badge" style="background:rgba(255,255,255,.16);color:#fff">SEO + CRO + UX</span>
+        <h2 style="color:#fff;margin-top:.7rem">Uma landing principal que vende e páginas satélite que ranqueiam.</h2>
+        <p>Perfeito para capturar demanda de marca, serviço e intenção de contratação.</p>
+      </div>
+      <a class="btn btn-ghost" href="#contato">Falar com a Movili</a>
+    </div>
+  </section>
 
-                    <div class="hero-mini">
-                        <strong>Diagnóstico rápido pelo WhatsApp:</strong> você preenche o formulário, a Movili recebe
-                        seus dados organizados e o atendimento já começa com contexto.
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+        <h2>Respostas para objeções antes do contato.</h2>
+      </div>
+      <div class="faq grid-2">
+        <details open><summary>Posso contratar apenas um serviço?</summary><p>Sim. A estrutura foi pensada para permitir contratação pontual ou integrada, conforme o estágio da empresa.</p></details>
+        <details><summary>Essa arquitetura ajuda no Google?</summary><p>Sim. A LP principal fortalece a entidade da marca e as páginas satélite ampliam relevância para termos específicos de serviço.</p></details>
+        <details><summary>O layout premium influencia conversão?</summary><p>Influência diretamente na percepção de valor, clareza de navegação e confiança no primeiro contato.</p></details>
+        <details><summary>É possível evoluir para blog e cases?</summary><p>Sim. A base já está pronta para expansão com cluster de conteúdo, páginas locais e estudos de caso.</p></details>
+      </div>
+    </div>
+  </section>
 
-        <section class="section" id="servicos">
-            <div class="container">
-                <div class="section-head">
-                    <span class="badge">Soluções Movili</span>
-                    <h2>O que a Movili pode fazer pela sua empresa</h2>
-                    <p>
-                        Soluções pensadas para pequenas e médias empresas que precisam vender melhor, parecer mais
-                        profissionais e estruturar uma operação comercial mais inteligente.
-                    </p>
-                </div>
-
-                <div class="grid-3">
-                    <article class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h3>Desenvolvimento de Sites</h3>
-                        <p>Sites profissionais com foco em posicionamento, credibilidade, conversão e geração de
-                            oportunidades.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">📈</div>
-                        <h3>Gestão de Tráfego Pago</h3>
-                        <p>Campanhas para atrair leads qualificados e acelerar o crescimento com estratégia e direção.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">📱</div>
-                        <h3>Social Media</h3>
-                        <p>Conteúdo com identidade, consistência e comunicação alinhada ao posicionamento da sua
-                            empresa.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🧩</div>
-                        <h3>Implantação de CRM</h3>
-                        <p>Organização do processo comercial para acompanhar leads, propostas, follow-ups e fechamento.
-                        </p>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">🤝</div>
-                        <h3>Assessoria Comercial</h3>
-                        <p>Estruturação de rotina, abordagem, processos e indicadores para vender com mais
-                            previsibilidade.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">⚙️</div>
-                        <h3>Automações e Chatbots</h3>
-                        <p>Fluxos que economizam tempo, agilizam atendimento e criam uma operação mais escalável.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="sobre">
-            <div class="container split">
-                <div class="panel">
-                    <span class="badge">Por que escolher a Movili</span>
-                    <h2
-                        style="margin:16px 0 10px; font-size:clamp(2rem,3vw,3rem); line-height:1; letter-spacing:-1.2px;">
-                        Mais do que serviço. <span class="accent-text">Estratégia aplicada ao crescimento.</span></h2>
-                    <p class="muted" style="margin:0; font-size:1.02rem;">
-                        Muitas empresas investem em ações soltas. A Movili trabalha para conectar presença digital,
-                        comunicação, processo comercial e tecnologia em uma estrutura mais eficiente.
-                    </p>
-
-                    <div class="list-clean">
-                        <div class="list-item">
-                            <div class="check">✓</div>
-                            <div>
-                                <h4>Visão integrada</h4>
-                                <p>Marketing, comercial e tecnologia precisam conversar para gerar resultado
-                                    consistente.</p>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="check">✓</div>
-                            <div>
-                                <h4>Execução com foco em conversão</h4>
-                                <p>Não basta ficar bonito. Cada solução precisa ajudar a atrair, organizar e vender
-                                    melhor.</p>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="check">✓</div>
-                            <div>
-                                <h4>Atendimento consultivo</h4>
-                                <p>Cada negócio tem sua realidade. A proposta certa começa com diagnóstico e
-                                    direcionamento.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel">
-                    <span class="badge">Ideal para</span>
-                    <div class="list-clean" style="margin-top: 14px;">
-                        <div class="list-item">
-                            <div class="check">1</div>
-                            <div>
-                                <h4>Empresas que precisam vender mais</h4>
-                                <p>Mas ainda não têm uma estrutura comercial clara ou um site que gere autoridade.</p>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="check">2</div>
-                            <div>
-                                <h4>Negócios com presença digital fraca</h4>
-                                <p>Que precisam parecer mais profissionais para transmitir confiança ao mercado.</p>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="check">3</div>
-                            <div>
-                                <h4>Operações que perderam controle</h4>
-                                <p>Leads espalhados, atendimento sem padrão, follow-up sem processo e pouca
-                                    previsibilidade.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="processo">
-            <div class="container">
-                <div class="section-head">
-                    <span class="badge">Como funciona</span>
-                    <h2>Um processo simples para sair do improviso</h2>
-                    <p>Da primeira conversa à proposta, a Movili organiza o atendimento para entender seu cenário e
-                        indicar a melhor solução.</p>
-                </div>
-
-                <div class="steps">
-                    <article class="step">
-                        <div class="step-number">1</div>
-                        <h3>Diagnóstico</h3>
-                        <p>Você informa seu cenário, objetivo, serviço desejado e principal desafio.</p>
-                    </article>
-                    <article class="step">
-                        <div class="step-number">2</div>
-                        <h3>Análise</h3>
-                        <p>A Movili avalia a necessidade e entende o que precisa ser prioridade.</p>
-                    </article>
-                    <article class="step">
-                        <div class="step-number">3</div>
-                        <h3>Direcionamento</h3>
-                        <p>Você recebe uma recomendação de caminho com visão estratégica.</p>
-                    </article>
-                    <article class="step">
-                        <div class="step-number">4</div>
-                        <h3>Execução</h3>
-                        <p>Com o plano definido, a solução entra em prática com foco em resultado.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-sm">
-            <div class="container">
-                <div class="cta-band">
-                    <div>
-                        <h3>Sua empresa está pronta para crescer com mais estrutura?</h3>
-                        <p>Preencha o formulário e fale direto com a Movili pelo WhatsApp.</p>
-                    </div>
-                    <a class="btn btn-primary" href="#contato">Quero falar agora</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contato">
-            <div class="container split">
-                <div>
-                    <div class="section-head" style="margin-bottom: 20px;">
-                        <span class="badge">Contato</span>
-                        <h2>Solicite um diagnóstico gratuito</h2>
-                        <p>Preencha os dados e o botão abrirá o WhatsApp com a mensagem já estruturada para agilizar o
-                            atendimento.</p>
-                    </div>
-
-                    <div class="panel">
-                        <div class="list-clean" style="margin-top:0;">
-                            <div class="list-item">
-                                <div class="check">→</div>
-                                <div>
-                                    <h4>Atendimento rápido</h4>
-                                    <p>O formulário organiza as informações antes da conversa começar.</p>
-                                </div>
-                            </div>
-                            <div class="list-item">
-                                <div class="check">→</div>
-                                <div>
-                                    <h4>Mais contexto, menos atrito</h4>
-                                    <p>Nome, empresa, objetivo e desafio já chegam prontos no WhatsApp.</p>
-                                </div>
-                            </div>
-                            <div class="list-item">
-                                <div class="check">→</div>
-                                <div>
-                                    <h4>Ideal para tráfego pago</h4>
-                                    <p>Estrutura ótima para landing page, campanhas e captação de leads.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-card">
-                    <form id="moviliWhatsForm">
-                        <div class="form-grid">
-                            <div class="field">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-                            </div>
-
-                            <div class="field">
-                                <label for="empresa">Empresa</label>
-                                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
-                            </div>
-
-                            <div class="field field-full">
-                                <label for="servico">Qual solução você procura?</label>
-                                <select id="servico" name="servico" required>
-                                    <option value="">Selecione uma opção</option>
-                                    <option value="Desenvolvimento de Sites">Desenvolvimento de Sites</option>
-                                    <option value="Gestão de Tráfego Pago">Gestão de Tráfego Pago</option>
-                                    <option value="Social Media">Social Media</option>
-                                    <option value="Implantação de CRM">Implantação de CRM</option>
-                                    <option value="Assessoria Comercial">Assessoria Comercial</option>
-                                    <option value="Automações e Chatbots">Automações e Chatbots</option>
-                                    <option value="Assessoria Comercial + Marketing">Assessoria Comercial + Marketing
-                                    </option>
-                                </select>
-                            </div>
-
-                            <div class="field field-full">
-                                <label for="objetivo">Objetivo principal</label>
-                                <input type="text" id="objetivo" name="objetivo"
-                                    placeholder="Ex: gerar mais leads, vender mais, profissionalizar a empresa" />
-                            </div>
-
-                            <div class="field field-full">
-                                <label for="problema">Descreva seu desafio</label>
-                                <textarea id="problema" name="problema"
-                                    placeholder="Conte brevemente o que sua empresa precisa neste momento"></textarea>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-primary" type="submit" style="width:100%; margin-top:18px;">Falar com
-                            especialista no WhatsApp</button>
-                        <p class="form-note">Ao clicar, o WhatsApp será aberto com a mensagem pronta para envio.</p>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="section-head">
-                    <span class="badge">Perguntas frequentes</span>
-                    <h2>Dúvidas comuns antes de contratar</h2>
-                    <p>Algumas respostas rápidas para ajudar na sua decisão.</p>
-                </div>
-
-                <div class="faq">
-                    <details>
-                        <summary>A Movili atende apenas criação de sites?</summary>
-                        <p>Não. A Movili também atua com tráfego pago, social media, CRM, automações e assessoria
-                            comercial, sempre buscando integrar estratégia e execução.</p>
-                    </details>
-                    <details>
-                        <summary>Posso solicitar apenas uma solução específica?</summary>
-                        <p>Sim. O atendimento começa entendendo a sua necessidade. A partir disso, a recomendação pode
-                            envolver um serviço pontual ou uma estrutura mais completa.</p>
-                    </details>
-                    <details>
-                        <summary>Esse formulário já envia meus dados para o WhatsApp?</summary>
-                        <p>Sim. Ao enviar, o site monta automaticamente a mensagem e abre a conversa no WhatsApp com
-                            tudo preenchido.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-grid">
-            <div>
-                <div class="logo" style="margin-bottom:10px;">
-                    <img src="/assets/img/logo.png" alt="Logo da Movili" width="40%" height="40%">
-                    <!-- <span class="logo-mark">M</span>
-          <span>Movili Tecnologia</span> -->
-                </div>
-                <p style="margin:0; max-width: 650px;">Soluções comerciais, marketing e tecnologia para empresas que
-                    querem crescer com mais clareza, presença digital e estrutura.</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="#inicio">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-                <a href="mailto:contato@movili.net">contato@movili.net</a>
-            </div>
+  <section class="section" id="contato">
+    <div class="container contact-wrap">
+      <div class="contact-card card" style="padding:1.5rem">
+        <span class="kicker">Contato</span>
+        <h2>Solicite um diagnóstico gratuito.</h2>
+        <p>Preencha o formulário e abra o WhatsApp com uma mensagem já estruturada para agilizar o atendimento.</p>
+        <ul class="checklist">
+          <li>Mais contexto, menos atrito na conversa.</li>
+          <li>CTA com alta intenção de contato.</li>
+          <li>Estrutura ideal para campanhas e tráfego pago.</li>
+        </ul>
+      </div>
+      <form id="lead-form" class="form-card card">
+        <div class="form-grid">
+          <div><label for="nome">Nome</label><input id="nome" name="nome" required placeholder="Seu nome"></div>
+          <div><label for="empresa">Empresa</label><input id="empresa" name="empresa" required placeholder="Nome da empresa"></div>
         </div>
-    </footer>
-
-    <a class="float-wa"
-        href="https://wa.me/5561996719511?text=Ol%C3%A1%20Movili!%20Quero%20entender%20como%20voc%C3%AAs%20podem%20ajudar%20minha%20empresa."
-        target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">⌁</a>
-
-    <script>
-        const form = document.getElementById('moviliWhatsForm');
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const nome = document.getElementById('nome').value.trim();
-            const empresa = document.getElementById('empresa').value.trim();
-            const servico = document.getElementById('servico').value.trim();
-            const objetivo = document.getElementById('objetivo').value.trim();
-            const problema = document.getElementById('problema').value.trim();
-
-            const mensagem = `Olá, Movili! Gostaria de solicitar um diagnóstico.\n\nNome: ${nome || '-'}\nEmpresa: ${empresa || '-'}\nServiço de interesse: ${servico || '-'}\nObjetivo principal: ${objetivo || '-'}\nDesafio atual: ${problema || '-'}\n\nVim pelo site e quero entender a melhor solução para minha empresa.`;
-
-            const numero = '5561996719511';
-            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-            window.open(url, '_blank');
-        });
-    </script>
+        <div class="form-grid">
+          <div><label for="servico">Solução desejada</label><select id="servico" name="servico"><option>Criação de Sites</option><option>Tráfego Pago</option><option>CRM e Automação</option><option>Assessoria Comercial</option><option>Social Media</option><option>Estrutura integrada</option></select></div>
+          <div><label for="objetivo">Objetivo principal</label><input id="objetivo" name="objetivo" required placeholder="Ex.: gerar mais leads"></div>
+        </div>
+        <div><label for="desafio">Desafio atual</label><textarea id="desafio" name="desafio" placeholder="Descreva o que hoje trava seu crescimento"></textarea></div>
+        <button class="btn btn-primary" type="submit">Falar com especialista no WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="/index.html"><span class="brand-mark">M</span><span>Movili</span></a>
+      <p style="margin-top:1rem">Soluções de marketing, comercial e tecnologia para empresas que querem crescer com mais clareza, presença digital e estrutura.</p>
+    </div>
+    <div>
+      <h3>Navegação</h3>
+      <div class="footer-links">
+        <a href="/index.html">Home</a>
+        <a href="/servicos/trafego-pago.html">Tráfego Pago</a>
+        <a href="/servicos/sites-estrategicos.html">Sites Estratégicos</a>
+        <a href="/servicos/crm-automacao.html">CRM e Automação</a>
+      </div>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <div class="footer-links">
+        <a href="mailto:contato@movili.net">contato@movili.net</a>
+        <a href="#contato">Solicitar diagnóstico</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
 </body>
-
 </html>
