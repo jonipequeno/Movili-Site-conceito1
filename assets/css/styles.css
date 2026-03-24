@@ -65,7 +65,7 @@ header.site-header{position:sticky;top:0;z-index:30;background:rgba(248,251,255,
 .service-card h3,.offer-card h3{margin-top:1rem}
 .icon{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--accent-2),#fff);display:grid;place-items:center;color:var(--primary);font-weight:900;border:1px solid rgba(0,184,148,.18)}
 .strip{background:linear-gradient(135deg,#0f172a,#0f4c81);color:#fff}
-.strip p,.strip li{color:rgba(255,255,255,.82)}
+.strip p,.strip li{color:rgba(126, 123, 123, 0.82)}
 .proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .proof .stat-card{text-align:center;padding:1.4rem}
 .proof strong{display:block;font-size:2rem;color:var(--primary)}
