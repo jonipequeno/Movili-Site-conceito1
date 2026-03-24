@@ -17,7 +17,7 @@ if (form) {
     const servico = data.get('servico');
     const objetivo = data.get('objetivo');
     const desafio = data.get('desafio');
-    const telefone = '5500000000000';
+    const telefone = '5561998019941';
     const msg = `Olá, Movili!%0A%0ANome: ${encodeURIComponent(nome)}%0AEmpresa: ${encodeURIComponent(empresa)}%0AServiço de interesse: ${encodeURIComponent(servico)}%0AObjetivo: ${encodeURIComponent(objetivo)}%0ADesafio: ${encodeURIComponent(desafio)}%0A%0AGostaria de receber um diagnóstico.`;
     window.open(`https://wa.me/${telefone}?text=${msg}`, '_blank');
   });
